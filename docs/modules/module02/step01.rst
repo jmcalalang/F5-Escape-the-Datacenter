@@ -26,6 +26,13 @@ The Token, Cluster Name, and Hostname need to be filled out. The token we acquir
 
 Latitude and Longitude are used by the F5 Distributed Cloud CE to identify which two F5 Distributed Cloud Regional Edges are closest. Having the regional edges correctly identified will improve latency between the CEs and REs.
 
+Attributes:
+
+- Cluster Name: ``<unique namespace>-udf``
+- Hostname: ``<unique namespace>-udf``
+- Latitude: ``45.594564``
+- Longitude: ``-121.178682``
+
 |image03|
 |image04|
 
