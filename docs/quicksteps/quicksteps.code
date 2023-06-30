@@ -10,6 +10,8 @@ tmsh create /net route 10.244.2.0/24 gw 10.1.10.8
 tmsh create /net route 10.244.3.0/24 gw 10.1.10.9
 tmsh create /net route 10.244.4.0/24 gw 10.1.10.10
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### From ocp-provisioner:
 
 su cloud-user
@@ -35,7 +37,7 @@ oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user
 
 oc apply -f https://raw.githubusercontent.com/F5Networks/k8s-bigip-ctlr/master/docs/config_examples/customResourceDefinitions/customresourcedefinitions.yml
 
-Create global-cm.yaml:
+# Create global-cm.yaml:
 
 cat << 'GLOBAL' | sudo tee -a ~/global-cm.yaml
 apiVersion: v1
@@ -56,7 +58,7 @@ GLOBAL
 
 oc apply -f ~/global-cm.yaml
 
-Create f5-bigip-ctlr-deployment.yaml:
+# Create f5-bigip-ctlr-deployment.yaml:
 
 cat << 'DEPLOYMENT' | sudo tee -a ~/f5-bigip-ctlr-deployment.yaml
 apiVersion: apps/v1
@@ -118,18 +120,22 @@ DEPLOYMENT
 
 oc apply -f ~/f5-bigip-ctlr-deployment.yaml
 
-Verify:
+# Verify:
 
 oc get deploy -n kube-system
+
 oc get pod -n kube-system
 
-Services:
+# Services:
 
 oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/demo-app/cafe/cafe-deployment.yaml
+
 oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/demo-app/cafe/cafe-service.yaml
 
-Routes:
+# Routes:
 
 oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/next-gen-route/route/cafe/secure/route-coffee-edge.yaml
+
 oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/next-gen-route/route/cafe/secure/route-mocha-edge.yaml
+
 oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/next-gen-route/route/cafe/secure/route-tea-edge.yaml
