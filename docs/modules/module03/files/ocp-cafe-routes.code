@@ -1,0 +1,5 @@
+# Create routes for the cafe application
+
+oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/next-gen-route/route/cafe/secure/route-coffee-edge.yaml
+oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/next-gen-route/route/cafe/secure/route-mocha-edge.yaml
+oc apply -f https://raw.githubusercontent.com/f5devcentral/f5-cis-docs/main/user_guides/ovn-kubernetes-standalone/next-gen-route/route/cafe/secure/route-tea-edge.yaml

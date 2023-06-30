@@ -1,0 +1,14 @@
+# Create namespace and apply to Openshift
+
+cat << 'NAMESPACE' | sudo tee -a ~/name-cafe.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    k8s.ovn.org/routing-external-gws: 10.1.10.11 ##BIG-IP interface address rotatable to the OpenShift nodes
+  labels:
+    kubernetes.io/metadata.name: default
+  name: cafe
+NAMESPACE
+
+oc apply -f ~/name-cafe.yaml

@@ -1,0 +1,3 @@
+# Switch user to cloud-user
+
+su cloud-user

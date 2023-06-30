@@ -1,0 +1,4 @@
+# Verify the CIS service is running
+
+oc get deploy -n kube-system
+oc get pod -n kube-system

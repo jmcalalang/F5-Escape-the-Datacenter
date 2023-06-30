@@ -1,0 +1,22 @@
+# Create Global configmap for the cafe namespace
+
+Create global-cm.yaml:
+
+cat << 'GLOBAL' | sudo tee -a ~/global-cm.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: global-cm
+  namespace: kube-system
+  labels:
+    f5nr: "true"
+data:
+  extendedSpec: |
+    extendedRouteSpec:
+    - namespace: cafe
+      vserverAddr: 10.1.10.12
+      vserverName: cafe
+      allowOverride: true
+GLOBAL
+
+oc apply -f ~/global-cm.yaml

@@ -1,0 +1,3 @@
+# Create OpenShift partition:
+
+tmsh create auth partition OpenShift
