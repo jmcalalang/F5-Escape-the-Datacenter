@@ -120,6 +120,8 @@ After exploring the objects that were created in the previous modules, here are 
 Module Complete
 ---------------
 
+.. sectnum::
+
 .. |image01| image:: images/image01.png
   :width: 75%
   :align: middle
