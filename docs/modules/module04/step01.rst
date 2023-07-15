@@ -117,13 +117,20 @@ After exploring the objects that were created in the previous modules, here are 
   # Delete a service, what changes?
   oc delete service mocha-svc -n cafe
 
+Reset Resources
+---------------
+
+Reset OpenShift back to original configuration:
+
+``oc apply -f https://raw.githubusercontent.com/jmcalalang/F5-Escape-the-Datacenter/main/docs/quicksteps/quicksteps-openshift.code``
+
 Module Complete
 ---------------
 
 .. sectnum::
 
 .. |image01| image:: images/image01.png
-  :width: 75%
+  :width: 50%
   :align: middle
 
 .. |image02| image:: images/image02.png

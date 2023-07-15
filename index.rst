@@ -12,11 +12,17 @@ Escaping from the data center requires tools and technologies at the ready. As w
 
 We will be working with RedHat OpenShift, BIG-IP, and F5 Distributed Cloud to expose services at different service tiers, Sites, and Globally. Highlighting different security practices and architectures.
 
-This lab requires two F5 UDF blueprints, the easiest way is to have an F5 UDF course contain both; although, having two deployments for internal use will also work.
+This lab requires a F5 UDF blueprint, the easiest way is to utilize an F5 UDF course. Blueprint for internal use will also work.
+
+F5 UDF Course:
 
 |image01|
 
-This lab contains:
+Complete Lab Components:
+
+|image03|
+
+Component details:
 
 OpenShift 4.12.20
   - 3 Master nodes / 2 Worker nodes
@@ -51,11 +57,16 @@ Indices and tables
 * :ref:`search`
 
 .. |image01| image:: docs/index/images/image01.png
-  :width: 95%
+  :width: 75%
   :align: middle
   :alt: Logo
 
 .. |image02| image:: docs/index/images/image02.png
-  :width: 95%
+  :width: 100%
+  :align: middle
+  :alt: Banner
+
+.. |image03| image:: docs/index/images/image03.png
+  :width: 75%
   :align: middle
   :alt: Banner

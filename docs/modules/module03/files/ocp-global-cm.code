@@ -1,7 +1,5 @@
 # Create Global configmap for the cafe namespace
 
-Create global-cm.yaml:
-
 cat << 'GLOBAL' | sudo tee -a ~/global-cm.yaml
 apiVersion: v1
 kind: ConfigMap

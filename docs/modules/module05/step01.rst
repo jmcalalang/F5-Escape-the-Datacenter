@@ -90,7 +90,7 @@ Navigate to the HTTP load balancer resources
 
 |image10|
 
-Create the F5xc HTTP load balancer resource
+Create the F5XC HTTP load balancer resource
 -------------------------------------------
 
 Give the HTTP load balancer a name with our unique namespace appending a resource type for best practice
@@ -203,7 +203,7 @@ Module Complete
 .. _`f5-xc-lab-mcn tenant`: https://f5-xc-lab-mcn.console.ves.volterra.io/
 
 .. |image01| image:: images/image01.png
-  :width: 75%
+  :width: 50%
   :align: middle
 
 .. |image02| image:: images/image02.png

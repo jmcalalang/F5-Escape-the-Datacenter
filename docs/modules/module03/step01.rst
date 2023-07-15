@@ -61,6 +61,8 @@ Example:
 
 |image05|
 
+.. warning:: This step is required, Root user does not have a kubeconfig file to access OpenShift
+
 Create an OpenShift namespace
 -----------------------------
 
