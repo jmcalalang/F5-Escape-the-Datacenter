@@ -63,11 +63,6 @@ Example:
 
 .. warning:: This step is required, Root user does not have a kubeconfig file to access OpenShift
 
-Authenticate to the OpenShift cluster:
-
-.. literalinclude:: files/ocp-user-auth.code
-   :language: bash
-
 Create an OpenShift namespace
 -----------------------------
 

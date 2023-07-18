@@ -1,3 +1,0 @@
-# Login to OpenShift
-
-oc config use-context default/api-ocp-f5-udf-com:6443/recovery
