@@ -120,9 +120,11 @@ After exploring the objects that were created in the previous modules, here are 
 Reset Resources
 ---------------
 
-Reset OpenShift back to original configuration:
+Reset OpenShift back to original configuration, browse to the file below, copy and paste into the ocp-provisioner webshell.
 
-``oc apply -f https://raw.githubusercontent.com/jmcalalang/F5-Escape-the-Datacenter/main/docs/quicksteps/quicksteps-openshift.code``
+``https://raw.githubusercontent.com/jmcalalang/F5-Escape-the-Datacenter/main/docs/quicksteps/quicksteps-openshift.code``
+
+.. warning:: This script runs from the root user, make sure to exit from cloud-user
 
 Module Complete
 ---------------
