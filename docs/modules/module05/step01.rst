@@ -173,10 +173,10 @@ With the certificate created, we can now access the domain created for our OpenS
 
 |image22|
 
-Navigate to the HTTP load balancer analytics
---------------------------------------------
+Navigate to the Load Balancer Statistics
+----------------------------------------
 
-Management of the HTTP load balancers and Analytics of the load balancer are two different locations. This is preferred for RBAC of different roles
+The Overview section of Multi-Cloud App Connect contains overall performance dashboards of namespace load balancers. You can also browse to individual load balancers for granular statistics
 
 |image23|
 

@@ -97,7 +97,7 @@ TLS profiles that were created from the route manifests
 Changing Resources
 ------------------
 
-After exploring the objects that were created in the previous modules, here are a few commands we can use to show some changes.
+After exploring the objects that were created in the previous modules, here are a few commands we can use to show some changes. Execute the OpenShift commands below to scale or delete services, look at the BIG-IP TMUI after each one to see how BIG-IP objects are adjusted to reflect the OpenShift changes.
 
 .. code-block:: bash
   :emphasize-lines: 2,5,8,11,14
@@ -120,7 +120,7 @@ After exploring the objects that were created in the previous modules, here are 
 Reset Resources
 ---------------
 
-Reset OpenShift back to original configuration, browse to the file below, copy and paste into the ocp-provisioner webshell.
+Reset OpenShift resources back to lab configuration, browse to the file below, copy and paste into the ocp-provisioner webshell.
 
 ``https://raw.githubusercontent.com/jmcalalang/F5-Escape-the-Datacenter/main/docs/quicksteps/quicksteps-openshift.code``
 
